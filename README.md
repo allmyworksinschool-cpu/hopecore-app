@@ -10,26 +10,26 @@ HopeCore is a mobile-first web app designed to motivate and inspire teenagers wi
 
 ## Features
 
-- **Daily Story Drop** — A new inspiring story every day (3-5 minute read)
-- **Audio Narration** — Listen to stories instead of reading
-- **Daily Challenges** — Small actionable tasks inspired by each story
-- **Hope Points System** — Earn points for completing challenges
-- **Anonymous Story Sharing** — Share your own story for possible publication
-- **Community Stories** — Read stories submitted by other users
-- **Achievements & Badges** — Unlock rewards for consistency and kindness
-- **Category Selection** — Filter stories by topic (mental health, sports, art, social change)
+- **Daily Story Drop**: A new inspiring story every day (3-5 minute read)
+- **Audio Narration**: Listen to stories instead of reading
+- **Daily Challenges**: Small actionable tasks inspired by each story
+- **Hope Points System**: Earn points for completing challenges
+- **Anonymous Story Sharing**: Share your own story for possible publication
+- **Community Stories**: Read stories submitted by other users
+- **Achievements & Badges**: Unlock rewards for consistency and kindness
+- **Category Selection**: Filter stories by topic (mental health, sports, art, social change)
 
 ## Color Palette
 
-- Yellow — Optimism and happiness
-- Light Blue — Calm and trust
-- Orange — Energy and warmth
-- Green — Growth and renewal
+- Yellow: Optimism and happiness
+- Light Blue: Calm and trust
+- Orange: Energy and warmth
+- Green: Growth and renewal
 
 ## Fonts Used
 
-- **Inter** — Clean, readable sans-serif for body text
-- **Playfair Display** — Elegant serif for headings
+- **Inter**: Clean, readable sans-serif for body text
+- **Playfair Display**: Elegant serif for headings
 
 ## Tech Stack
 
