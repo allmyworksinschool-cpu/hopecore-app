@@ -6,7 +6,7 @@ HopeCore is a mobile-first web app designed to motivate and inspire teenagers wi
 
 ## Created By
 
-- Rafi Ohebsion
+Maddie Oh, Keira Molinski, Caitlin Cohen, and Kate Schwartzberg
 
 ## Features
 
