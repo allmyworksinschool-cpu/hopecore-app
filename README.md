@@ -1,15 +1,12 @@
-# HopeCore 🌟
+# HopeCore
 
 ## Stories That Spark a Brighter Tomorrow
 
-HopeCore is a mobile-first web app designed to motivate and inspire teenagers by sharing a carefully curated story every day. These stories are sourced from real-life experiences, historical figures, and fictional narratives that resonate with themes of resilience, perseverance, creativity, and kindness.
+HopeCore is a mobile-first web app designed to motivate and inspire teenagers with daily curated stories. These stories are sourced from real-life experiences, historical figures, and fictional narratives and selected to resonate with critical themes such as resilience, perseverance, creativity, and kindness.
 
 ## Created By
 
-- Maddie Oh
-- Keira Molinski
-- Caitlin Cohen
-- Kate Schwartzberg
+- Rafi Ohebsion
 
 ## Features
 
@@ -50,7 +47,7 @@ HopeCore is a mobile-first web app designed to motivate and inspire teenagers by
 
 ## Live Demo
 
-Deployed on Vercel: [Insert your Vercel URL here]
+Deployed on Vercel
 
 ## Future Plans
 
