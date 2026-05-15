@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>HopeCore | Stories That Spark a Brighter Tomorrow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Screen with Sun Animation -->
+    <div id="splashScreen" class="splash">
+        <div class="gradient-bg"></div>
+        <div class="sun-container">
+            <div class="sun">
+                <div class="sun-core"></div>
+                <div class="rays">
+                    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+                    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+                    <div class="ray"></div><div class="ray"></div>
+                </div>
+            </div>
+        </div>
+        <div class="logo-container">
+            <h1 class="app-logo">HopeCore</h1>
+            <p class="tagline">stories that spark a brighter tomorrow</p>
+        </div>
+    </div>
+
+    <!-- Main App Container -->
+    <div id="mainApp" class="main-app hidden">
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <button class="nav-btn active" data-page="home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-5v-7H9v7H4a2 2 0 0 1-2-2z"/></svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-btn" data-page="tasks">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Tasks</span>
+            </button>
+            <button class="nav-btn" data-page="share">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span>Share</span>
+            </button>
+            <button class="nav-btn" data-page="profile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Profile</span>
+            </button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <!-- Home Page -->
+            <div id="homePage" class="page active-page">
+                <div class="welcome-header">
+                    <h2>Good morning,</h2>
+                    <p class="greeting-name">Hope Seeker</p>
+                </div>
+                
+                <!-- Today's Story Card -->
+                <div class="story-card">
+                    <div class="story-category">✨ Hero's Journey</div>
+                    <h3 class="story-title">The Girl Who Taught a Village to Read</h3>
+                    <div class="story-meta">
+                        <span>📖 4 min read</span>
+                        <span>🎧 Audio available</span>
+                    </div>
+                    <p class="story-excerpt">
+                        At just 14 years old, Malala Yousafzai stood up to the Taliban and demanded education for girls. 
+                        Her courage sparked a global movement and made her the youngest Nobel Prize laureate in history.
+                        This is a story about finding your voice when everyone tells you to be quiet...
+                    </p>
+                    <button class="read-more-btn">Read Full Story →</button>
+                    <div class="story-challenge">
+                        <span>⭐ Today's Challenge:</span>
+                        <p>Write down one thing you believe in that you're afraid to speak up about.</p>
+                    </div>
+                </div>
+
+                <!-- Daily Inspiration Quote -->
+                <div class="quote-card">
+                    <p class="quote-text">"The future belongs to those who believe in the beauty of their dreams."</p>
+                    <p class="quote-author">— Eleanor Roosevelt</p>
+                </div>
+
+                <!-- Trending Stories Section -->
+                <div class="section-header">
+                    <h3>Trending This Week</h3>
+                    <a href="#" class="see-all">See all →</a>
+                </div>
+                <div class="story-row">
+                    <div class="mini-story-card">
+                        <div class="mini-category">💪 Overcoming Adversity</div>
+                        <h4>From Refugee to Olympian</h4>
+                        <div class="mini-stats">⭐ 2.3k reactions</div>
+                    </div>
+                    <div class="mini-story-card">
+                        <div class="mini-category">🎨 Creative Sparks</div>
+                        <h4>The Teen Who Invented a Cleaner Ocean</h4>
+                        <div class="mini-stats">⭐ 1.8k reactions</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks Page -->
+            <div id="tasksPage" class="page hidden">
+                <div class="page-header">
+                    <h2>🌱 Give Back</h2>
+                    <p>Small actions, big impact. Choose a challenge to complete today.</p>
+                </div>
+
+                <!-- Daily Task -->
+                <div class="task-card">
+                    <div class="task-checkbox">
+                        <input type="checkbox" id="task1">
+                    </div>
+                    <div class="task-content">
+                        <label for="task1" class="task-title">Write a positive note for someone</label>
+                        <p class="task-desc">Leave an encouraging note on a friend's desk or a family member's pillow.</p>
+                        <span class="task-reward">+50 Hope Points</span>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-checkbox">
+                        <input type="checkbox" id="task2">
+                    </div>
+                    <div class="task-content">
+                        <label for="task2" class="task-title">Compliment a stranger</label>
+                        <p class="task-desc">Pay a genuine compliment to someone you don't know today.</p>
+                        <span class="task-reward">+75 Hope Points</span>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-checkbox">
+                        <input type="checkbox" id="task3">
+                    </div>
+                    <div class="task-content">
+                        <label for="task3" class="task-title">Research a local charity</label>
+                        <p class="task-desc">Find one organization in your community that needs volunteers.</p>
+                        <span class="task-reward">+100 Hope Points</span>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-checkbox">
+                        <input type="checkbox" id="task4">
+                    </div>
+                    <div class="task-content">
+                        <label for="task4" class="task-title">Share today's story</label>
+                        <p class="task-desc">Send today's HopeCore story to a friend who needs encouragement.</p>
+                        <span class="task-reward">+60 Hope Points</span>
+                    </div>
+                </div>
+
+                <div class="task-card weekly">
+                    <div class="task-checkbox">
+                        <input type="checkbox" id="task5">
+                    </div>
+                    <div class="task-content">
+                        <label for="task5" class="task-title">🎯 Weekly Goal: Volunteer 2 hours</label>
+                        <p class="task-desc">Find a local shelter, food bank, or community center to help this week.</p>
+                        <span class="task-reward">+500 Hope Points (Bonus!)</span>
+                    </div>
+                </div>
+
+                <div class="hope-score">
+                    <div class="score-ring">
+                        <span class="score-number">285</span>
+                        <span class="score-label">Hope Points</span>
+                    </div>
+                    <p class="score-message">Keep going! You're making a difference.</p>
+                </div>
+            </div>
+
+            <!-- Share Story Page -->
+            <div id="sharePage" class="page hidden">
+                <div class="page-header">
+                    <h2>📝 Share Your Story</h2>
+                    <p>Your experience could inspire someone else today.</p>
+                </div>
+
+                <div class="share-card">
+                    <div class="anon-notice">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        <span>Your identity stays completely anonymous</span>
+                    </div>
+                    
+                    <select class="story-category-select" id="storyCategory">
+                        <option value="">Select a category</option>
+                        <option value="hero">Hero's Journey</option>
+                        <option value="kindness">Kindness Chronicle</option>
+                        <option value="creative">Creative Spark</option>
+                        <option value="mental">Mental Health Moment</option>
+                        <option value="global">Global Inspiration</option>
+                    </select>
+                    
+                    <input type="text" class="story-title-input" placeholder="Give your story a title" id="storyTitle">
+                    
+                    <textarea class="story-textarea" placeholder="Share your story here. What happened? How did it change you? What would you tell others going through something similar?" rows="8" id="storyContent"></textarea>
+                    
+                    <button class="submit-story-btn" id="submitStory">Submit Story →</button>
+                    <p class="submission-note">Our team reviews every story before publishing. We may feature yours in an upcoming Daily Drop!</p>
+                </div>
+
+                <!-- User Stories Section -->
+                <div class="section-header">
+                    <h3>Community Voices</h3>
+                </div>
+                <div class="user-story-card">
+                    <div class="user-story-header">
+                        <span class="story-category-tag">💪 Overcoming Adversity</span>
+                        <span class="anonymous-badge">Anonymous</span>
+                    </div>
+                    <h4>Finding My Way Through Anxiety</h4>
+                    <p class="user-story-preview">I used to think I was broken because my brain worked differently. Then I learned that some of the most creative people in history struggled too...</p>
+                    <button class="read-story-btn">Read full story →</button>
+                    <div class="story-reactions">
+                        <button>❤️ 127</button>
+                        <button>✨ 45</button>
+                        <button>💬 12</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Page -->
+            <div id="profilePage" class="page hidden">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h2>Hope Seeker</h2>
+                    <p class="member-since">Member since May 2026</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Stories Read</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Tasks Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Streak Days</div>
+                    </div>
+                </div>
+
+                <div class="badges-section">
+                    <h3>🏆 Achievements</h3>
+                    <div class="badges-grid">
+                        <div class="badge">
+                            <span class="badge-icon">🌟</span>
+                            <span class="badge-name">First Story</span>
+                        </div>
+                        <div class="badge locked">
+                            <span class="badge-icon">🔒</span>
+                            <span class="badge-name">5-Day Streak</span>
+                        </div>
+                        <div class="badge locked">
+                            <span class="badge-icon">🔒</span>
+                            <span class="badge-name">Kindness Warrior</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>⚙️ Settings</h3>
+                    <div class="setting-item">
+                        <span>🔔 Daily Story Notifications</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <span>🌙 Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <span>📧 Weekly Hope Newsletter</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <p class="about-text">HopeCore — Stories That Spark a Brighter Tomorrow</p>
+                    <p class="about-text-small">Created by Maddie Oh, Keira Molinski, Caitlin Cohen, and Kate Schwartzberg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
